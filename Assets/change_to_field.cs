@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class StartLevel1 : MonoBehaviour
+public class change_to_field : MonoBehaviour
 {
-    //this.GetComponent<Button>().onClick.AddListener(OnClick);
-    // Use this for initialization
+    public SceneFadeOut m_Fade;
+    // Start is called before the first frame update
     void Start()
     {
         this.GetComponent<Button>().onClick.AddListener(OnClick);
@@ -15,12 +15,16 @@ public class StartLevel1 : MonoBehaviour
 
     void OnClick()
     {
-        SceneManager.LoadScene("scene_level1");//level1为我们要切换到的场景
+        SceneManager.LoadScene("battle_field");//level1为我们要切换到的场景
     }
 
+    
     // Update is called once per frame
     void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            m_Fade.BackGroundControl(true);
+        }
     }
 }

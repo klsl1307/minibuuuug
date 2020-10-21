@@ -55,9 +55,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\StartGame.cs" />
-     <Compile Include="Assets\StartLevel1.cs" />
+     <Compile Include="Assets\Script2.cs" />
+     <Compile Include="Assets\ClickMirror.cs" />
      <Compile Include="Assets\StartLevel2.cs" />
+     <Compile Include="Assets\StartGame.cs" />
+     <Compile Include="Assets\MirrorOperation.cs" />
+     <Compile Include="Assets\SceneFadeOut.cs" />
+     <Compile Include="Assets\MirOp_Show.cs" />
+     <Compile Include="Assets\MirOp_Reflect.cs" />
+     <Compile Include="Assets\MirOp_Assemble.cs" />
+     <Compile Include="Assets\Script1.cs" />
+     <Compile Include="Assets\change_to_field.cs" />
+     <Compile Include="Assets\StartLevel1.cs" />
+     <Compile Include="Assets\Rope1.cs" />
+     <Compile Include="Assets\Rope2.cs" />
+     <Compile Include="Assets\BattleIns1.cs" />
+     <Compile Include="Assets\BattleIns2.cs" />
+     <Compile Include="Assets\Move.cs" />
+     <Compile Include="Assets\Move2.cs" />
+     <Compile Include="Assets\Move3.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/unity project/minigame1/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
