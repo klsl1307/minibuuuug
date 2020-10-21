@@ -4,18 +4,21 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class StartLevel1 : MonoBehaviour
+public class MirOp_Show : MonoBehaviour
 {
-    //this.GetComponent<Button>().onClick.AddListener(OnClick);
-    // Use this for initialization
+    public static GameObject show;
+    // Start is called before the first frame update
     void Start()
     {
         this.GetComponent<Button>().onClick.AddListener(OnClick);
+        show = GameObject.Find("Show");
+        show.SetActive(false); //保持txt的隐藏状态
+        //this.SetActive(false);
     }
 
     void OnClick()
     {
-        SceneManager.LoadScene("scene_level1");//level1为我们要切换到的场景
+
     }
 
     // Update is called once per frame
